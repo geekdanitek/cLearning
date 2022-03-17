@@ -15,6 +15,7 @@ int main(){
 
     printf("The area of this circle is: %lf \n", areaOfCircle);
     printf("The circumference of this circle is: %lf \n", circumference);
+    printf("%d", 7%4);
 
 
 
