@@ -7,7 +7,7 @@
 			"command": "/usr/bin/clang",
 			"args": [
 				"-fdiagnostics-color=always",
-				"-g",
+				// "-g", debug info
 				"${file}",
 				"-o",
 				"${fileDirname}/bin/${fileBasenameNoExtension}"
@@ -20,6 +20,29 @@
 			],
 			"group": "build",
 			"detail": "compiler: /usr/bin/clang"
+		},
+		{
+			"type": "shell",
+			"label": "Open C executable",
+			"command": "open",
+			"args": [
+				"${fileBasenameNoExtension}"
+			],
+			"group": "build",
+			"options": {
+				"cwd": "${fileDirname}/bin",
+			},
+		},
+		{
+			"type": "shell",
+			"command": "echo Build and execute done.",
+			"label": "Complie and execute active C file",
+			"dependsOrder": "parallel",
+			"dependsOn": ["C/C++: clang build active file", "Open C executable"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
 		}
 	]
 }

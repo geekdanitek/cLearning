@@ -17,7 +17,7 @@ int main(){
         // }
         // number = 2 * number;
         // printf("Current number is %d \n", number);
-        // number++;
+        // number++;;
 
         
         product = number * userInputNumber;

@@ -1,0 +1,5 @@
+{
+    "key": "ctrl+m",
+    "command": "workbench.action.tasks.build", //workbench.action.tasks.runTask
+    "args": "Complie and execute active C file"
+  }
