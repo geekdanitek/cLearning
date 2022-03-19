@@ -8,6 +8,15 @@ int main(){
     int userInputNumber;
     int product;
 
+
+    int x =1;
+    x = x + 2;
+    x = x * 2;
+
+    printf("%d \n", x);
+
+    return 0;
+
     printf("Enter a number to be multiplied: ");
     scanf("%d", &userInputNumber);
 
