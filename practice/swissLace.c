@@ -20,7 +20,6 @@ int main(){
         case 3:
             printf("The price for grade three is 380,000.00 \n");
         break;
-        
 
         case 4:
             printf("The price for grade four is 500,000.00 \n");
