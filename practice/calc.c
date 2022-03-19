@@ -17,7 +17,7 @@ int main(){
    
     switch (operationToBePerformed)
     {
-        //we round it up to 2 decimal places to as to prevent hhaving long zeros (000000)
+        //we round it up to 2 decimal places to as to prevent having long zeros (000000)
         case '+':
             printf("Additon of %.2lf + %.2lf = %.2lf \n", numOne, numTwo, numOne + numTwo);
         break;
