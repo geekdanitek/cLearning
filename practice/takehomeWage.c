@@ -45,11 +45,13 @@ int main()
 
     double pension = 0;
 
+     printf("Enter employee's name: ");
+    // scanf("%s", employeeName);
+    fgets(employeeName, 20, stdin);
+
+    
     printf("Enter employee's number: ");
     scanf("%s", employeeNumber);
-
-    printf("Enter employee's name: ");
-    scanf("%s", employeeName);
 
     printf("Enter housing allowance: ");
     scanf("%lf", &allowanceForHousing);
