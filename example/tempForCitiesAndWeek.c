@@ -3,13 +3,14 @@
 int main() {
 
     float tempForCity[2][7];
+    char* cities[] = {"Lagos", "Ogun"};
 
     int counterForArrayOne;
     int counterForArrayTwo;
 
 
     for(counterForArrayOne = 0; counterForArrayOne < 2; counterForArrayOne++){
-        printf("Enter city %d tempeature \n", counterForArrayOne + 1);
+        printf("Enter city %s tempeature \n", cities[counterForArrayOne]);
 
         for(counterForArrayTwo = 0; counterForArrayTwo < 7; counterForArrayTwo++ ){
             scanf("%f", &tempForCity[counterForArrayOne][counterForArrayTwo]);
@@ -21,7 +22,7 @@ int main() {
     //traversing all array
 
     for(counterForArrayOne = 0; counterForArrayOne < 2; counterForArrayOne++){
-        printf("City %d \n", counterForArrayOne + 1);
+        printf("City %s \n", cities[counterForArrayOne]);
 
 
         for(counterForArrayTwo = 0; counterForArrayTwo < 7; counterForArrayTwo++ ){
